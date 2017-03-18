@@ -1,0 +1,8 @@
+.task {
+    border: 1px solid rebeccapurple;
+    display: block;
+}
+.task__title {
+    color: rebeccapurple;
+    display: inline-block;
+}
