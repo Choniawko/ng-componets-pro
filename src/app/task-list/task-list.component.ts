@@ -19,4 +19,11 @@ export class TaskListComponent implements OnInit {
     ];
   }
 
+  addTask(title: string): void {
+    this.tasks.push({
+      title,
+      done: false
+    });
+  }
+
 }
