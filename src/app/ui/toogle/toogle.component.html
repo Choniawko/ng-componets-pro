@@ -1,0 +1,4 @@
+<button class="button bytton--toggle"
+        *ngFor="let button of buttonList"
+        [class.button--active]="button === selecteddButton"
+        (click)="onButtonActivate(button)">{{button}}</button>

@@ -11,6 +11,11 @@ import { ITask } from './task.interface';
 export class TaskComponent implements OnInit {
 
   @Input() task: ITask;
+  @HostBinding('class.task--done')
+  get done() {
+    return this.task && this.task.done;
+  }
+
   constructor() { }
 
   ngOnInit() {

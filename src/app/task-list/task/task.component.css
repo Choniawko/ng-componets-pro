@@ -2,6 +2,9 @@
     border: 1px solid rebeccapurple;
     display: block;
 }
+.task--done {
+    opacity: 0.5;
+}
 .task__title {
     color: rebeccapurple;
     display: inline-block;
