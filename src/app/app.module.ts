@@ -8,6 +8,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { TaskComponent } from './task-list/task/task.component';
 import { AddTaskComponent } from './task-list/add-task/add-task.component';
 import { UiModule } from './ui/ui.module';
+import { TaskListService } from './task-list/task-list.service';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { UiModule } from './ui/ui.module';
     HttpModule,
     UiModule
   ],
-  providers: [],
+  providers: [TaskListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
