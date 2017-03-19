@@ -1,4 +1,3 @@
+<ui-toggle [buttonList]="taskFilterList" [(selectedButton)]="selectedTaskFilter"></ui-toggle>
 <app-add-task (addedTask)="addTask($event)"></app-add-task>
-<div  class="task">
-  <app-task *ngFor="let task of getFilteredTasks" [task]="task"></app-task>
-</div>
+<app-task *ngFor="let task of getFilteredTasks" [task]="task"></app-task>

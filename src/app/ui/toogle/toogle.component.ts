@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'ui-toogle',
+  selector: 'ui-toggle',
   templateUrl: './toogle.component.html',
   styleUrls: ['./toogle.component.css'],
   host: {

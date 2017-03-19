@@ -27,10 +27,10 @@ export class TaskListComponent implements OnInit {
         let result: boolean;
         switch (this.selectedTaskFilter) {
           case 'otwarte':
-            result = task.done;
+            result = !task.done;
             break;
           case 'zamknięte':
-            result = !task.done;
+            result = task.done;
             break;
           default:
             result = true;
